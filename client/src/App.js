@@ -28,8 +28,7 @@ function App() {
       </div>
       <div class="form-control">
       <input type = "text"
-      autoFocus
-      onBlur={({target}) => target.focus()}
+      class='input-box'
       placeholder='...'
       onChange = {
         (event) => {setUsername(event.target.value);

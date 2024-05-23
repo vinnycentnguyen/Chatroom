@@ -35,10 +35,11 @@ html, body{
 }
 
 .form-control {
-  position: static;
+  position: relative;
+  bottom: 10vh;
+  left: 65vh;
   width: 20%;
-  margin-top: -3%;
-  margin-left: 32%;
+  margin: 10x;
   animation-name: hidden;
   animation-duration: 6s;
 }
@@ -47,27 +48,25 @@ html, body{
   background-color: transparent;
   border: 0;
   border-bottom: 1px #fff solid;
-  /* display: block; */
   margin-bottom: 40%;
-  width: 300%;
-  height: 400%;
+  width: 30vw;
+  height: 40vh;
   text-align: center;
   font-size: 36px;
-  /* top: 100%; */
   font-family: 'Comfortaa';
   color: #fff;
   animation-name: fadeIn;
   animation-delay: 6s;
   animation-duration: 2s;
-}
+} 
 
 .form-control input:focus,
 .form-control input:valid {
   outline: 1;
   height: 100px;
   width:500px;
-  /* border-bottom-color: rgb(234, 250, 132); */
 }
+
 
 @keyframes fadeOut {
   0% {
@@ -89,7 +88,6 @@ html, body{
 
 @keyframes fadeIn{
   0% {
-    /* visibility: visible; */
     opacity: 0; 
   }
   100% {
