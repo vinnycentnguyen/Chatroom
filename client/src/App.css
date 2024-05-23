@@ -1,0 +1,114 @@
+html, body{
+  font-family: 'Comfortaa';
+  color: white;
+  font-size: 48px;
+  background: rgb(10, 10, 15);
+}
+
+.ChatContainer{
+  position:absolute;
+  border: 1px solid rgb(234, 234, 181);
+  border-radius: 10px;
+  padding: 30px;
+  width: 95%;
+  height: 88%;
+  text-align: center;
+}
+
+.TitleContainer{
+  position:relative;
+  top: 35%;
+  margin-left: 0%;
+  opacity: 0;
+  animation-name: fadeOut;
+  animation-timing-function: ease-out;
+  animation-duration: 2s; 
+}
+
+.EnterContainer{
+  position: relative;
+  top: 15%;
+  opacity: 0;
+  animation-name: fadeInOut;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+.form-control {
+  position: static;
+  width: 20%;
+  margin-top: -3%;
+  margin-left: 32%;
+  animation-name: hidden;
+  animation-duration: 6s;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px #fff solid;
+  /* display: block; */
+  margin-bottom: 40%;
+  width: 300%;
+  height: 400%;
+  text-align: center;
+  font-size: 36px;
+  /* top: 100%; */
+  font-family: 'Comfortaa';
+  color: #fff;
+  animation-name: fadeIn;
+  animation-delay: 6s;
+  animation-duration: 2s;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 1;
+  height: 100px;
+  width:500px;
+  /* border-bottom-color: rgb(234, 250, 132); */
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0; 
+  }
+}
+
+@keyframes hidden{
+  0%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    /* visibility: visible; */
+    opacity: 0; 
+  }
+  100% {
+    visibility: visible;
+    opacity: 1; 
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    visibility: hidden;
+    opacity: 0; 
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0; 
+  }
+}

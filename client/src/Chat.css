@@ -1,0 +1,129 @@
+.chat-window{
+    position:absolute;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+    padding: 30px;
+    width: 95%;
+    height: 88%;
+    text-align: center;
+}
+
+.chat-participants{
+    font-size: 24px;
+    font-family: 'Comfortaa';
+    width: 15%;
+    height: 90%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1%;
+    border: 2px solid white;
+    overflow: auto;
+}
+.chat-participants li{
+    list-style-type: none;
+    padding-left: 10%;
+    line-height: 150%;
+}
+
+.chat-footer{
+    position: absolute;
+    top: 87%;
+    left: 20%;
+    width: 78%;
+}
+.chat-footer input{
+    background-color: transparent;
+    color: white;
+    font-family: 'Comfortaa';
+    position: relative;
+    height: 200%;
+    left: 0%;
+    height: 30px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid rgb(234, 234, 181);
+    overflow: hidden;
+}
+
+.chat-body {
+    float: right;
+    width: 80%;
+    height: 90%;
+    border: 1px solid #69cdff;  
+    position: relative;
+  }
+.chat-body .message-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+.chat-body .message-container::-webkit-scrollbar {
+    display: none;
+  }
+.chat-body .message {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    font-size: 16px;
+  }
+  
+.chat-body .message .message-content {
+    width: auto;
+    height: auto;
+    min-height: auto;
+    max-width: 500px;
+    background-color: #43a047;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+
+#you {
+    justify-content: flex-end;
+  }
+  
+  #you .message-content {
+    justify-content: center;
+    background-color: rgba(81, 167, 81, 0.882);
+  }
+  
+  #you .message-metadata {
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+
+  #other {
+    justify-content: flex-start;
+  }
+  
+  #other .message-content {
+    justify-content: center;
+    background-color: cornflowerblue;
+  }
+  
+  #other .message-metadata {
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+
+  .message-metadata #author {
+    margin-left: 10px;
+    font-weight: bold;    
+  }
+  
+.chat-body  .message-metadata {
+    display: flex;
+    font-size: 12px;
+  }
