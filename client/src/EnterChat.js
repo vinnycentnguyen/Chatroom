@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ChatContainer({ setUsername, joinRoom }) {
+function EnterChat({ setUsername, joinRoom }) {
     
    return <div data-testid="chat-1" className="ChatContainer">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
@@ -23,5 +23,5 @@ function ChatContainer({ setUsername, joinRoom }) {
   </div>
 }
 
-export default ChatContainer;
+export default EnterChat;
 

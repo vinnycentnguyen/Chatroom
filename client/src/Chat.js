@@ -4,6 +4,7 @@ import './Chat.css';
 import io from 'socket.io-client';
 
 
+
 const socket  = io.connect("http://localhost:3001");
 
 function Chat({socket, username, room}){
@@ -38,7 +39,7 @@ function Chat({socket, username, room}){
       }, [socket]);
 
     return(
-        <div className='chat-window'>
+        <div data-testid="chat-room" className='chat-window'>
             <div className='chat-participants'>
                 <h3>Participants:</h3>
                 {chatters.map(chatter => <li>{chatter}</li>)}
@@ -63,7 +64,7 @@ function Chat({socket, username, room}){
                 </ScrollToBottom>
                 </div>
             <div className='chat-footer'>
-                <input type="text" 
+                <input data-testid="text-entry-box" type="text" 
                 value={currentMessage}
                 placeholder="Type something..." 
                 onChange={

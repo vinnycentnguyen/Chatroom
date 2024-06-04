@@ -1,10 +1,10 @@
 import React, {useEffect, useState } from 'react';
 import './App.css';
-import ChatContainer from './ChatContainer.js'
+import EnterChat from './EnterChat.js'
 import Chat from './Chat.js';
 import io from 'socket.io-client';
 
-const socket  = io.connect("http://localhost:3001");
+const socket  = io.connect("http://:3001");
 
 function App() {
   const [username, setUsername] = useState("");
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       {!showChat ? (
-        <ChatContainer setUsername={setUsername} joinRoom={joinRoom} />
+        <EnterChat setUsername={setUsername} joinRoom={joinRoom} />
       ) : (
         <Chat socket={socket} username={username} room="chatroom" />
       )}
