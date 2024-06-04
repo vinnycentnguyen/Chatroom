@@ -1,4 +1,4 @@
-# Running Ethan's Favorite Chatroom on your own machine
+# Running Ethan's Favorite Chatroom on your own machine!
 
 1. Clone this repository onto your local machine, into a repository of your choice
 2. Ensure that you have `Node.js` and `NPM` (Node package manager) installed. You can do this by typing opening up your command line interface and typing in the commands `node -v` and `npm -v` to check which versions you have of either.
