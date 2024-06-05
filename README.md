@@ -13,6 +13,6 @@
 11. You may now open multiple tabs on this computer that go to this webpage, and you can have multiple "users" in the same chatroom now.
 
 SRS Requirements:
-Upon creating our chatroom, we successfully implemented a way for users to send messages, join the chatroom using a custom name, display active users, timestamps, and room deletion once every user has left the chatroom. Unfortunately, we were unable to
+- Upon creating our chatroom, we successfully implemented a way for users to send messages, join the chatroom using a custom name, display active users, timestamps, and room deletion once every user has left the chatroom. Unfortunately, we were unable to
 implement multimedia chatting (photos, videos, etc) but our chatroom holds the ability for multiple users to join. 
 
