@@ -14,7 +14,7 @@
 
 # SRS Requirements:
 
-Upon creating our chatroom, we successfully implemented a way for users to send messages, join the chatroom using a custom name, display active users, timestamps, and room deletion once every user has left the chatroom. We have not implemented multimedia chatting (photos, videos, etc) **yet**, but our chatroom holds the ability for multiple users to join and interact! (Currently over the same wifi network)
+Upon creating our chatroom, we successfully implemented a way for users to send messages, join the chatroom using a custom name, display active users, timestamps, and room deletion once every user has left the chatroom. We have not implemented multimedia chatting (photos, videos, etc) **yet**, but our chatroom holds the ability for multiple users to join and interact!
 
 # Testing
 
