@@ -1,6 +1,6 @@
-# Running Ethan's Favorite Chatroom on your own machine
+# Running Ethan's Favorite Chatroom on your own machine!
 
-1. Clone this repository onto your local machine, into a repository of your choice
+1. Clone this repository onto your local machine, into a repository of your choice.
 2. Ensure that you have `Node.js` and `NPM` (Node package manager) installed. You can do this by typing opening up your command line interface and typing in the commands `node -v` and `npm -v` to check which versions you have of either.
 3. Once you've ensured both are installed (you can install them through the [Node.js Website](https://nodejs.org/en)), enter the `server` repository using your command line interface.
 4. Once inside, download the node package first by typing `npm init`, and press enter until you've confirmed all of the options. 
@@ -11,3 +11,8 @@
 9. Same as the server, type in the command `npm install react-scripts --save` and wait for it finish installing.
 10. Then, type in `npm start` here as well. This should open a browser window that displays the chatroom website.
 11. You may now open multiple tabs on this computer that go to this webpage, and you can have multiple "users" in the same chatroom now.
+
+SRS Requirements:
+- Upon creating our chatroom, we successfully implemented a way for users to send messages, join the chatroom using a custom name, display active users, timestamps, and room deletion once every user has left the chatroom. Unfortunately, we were unable to
+implement multimedia chatting (photos, videos, etc) but our chatroom holds the ability for multiple users to join. 
+
