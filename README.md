@@ -1,6 +1,6 @@
 # Running Ethan's Favorite Chatroom on your own machine!
 
-1. Clone this repository onto your local machine, into a repository of your choice
+1. Clone this repository onto your local machine, into a repository of your choice.
 2. Ensure that you have `Node.js` and `NPM` (Node package manager) installed. You can do this by typing opening up your command line interface and typing in the commands `node -v` and `npm -v` to check which versions you have of either.
 3. Once you've ensured both are installed (you can install them through the [Node.js Website](https://nodejs.org/en)), enter the `server` repository using your command line interface.
 4. Once inside, download the node package first by typing `npm init`, and press enter until you've confirmed all of the options. 
