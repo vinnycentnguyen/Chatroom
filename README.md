@@ -24,7 +24,7 @@ Functional Requirements Fulfillment
 8.	Saving Received Images: Users can save images received in the chat by clicking a download button next to each image, implemented with an <a> tag and download attribute.
 9.	Timestamps and Read Receipts:	Messages include timestamps and read receipts, managed by appending metadata to each message object. The frontend displays this information next to each message.
 10.	Automatic Room Deletion:	Rooms and their messages are automatically deleted when all users leave. This is managed by a backend cleanup script that checks for empty rooms and purges them.
-11.	
+
 Non-Functional Requirements Fulfillment
 1.	Latency:	Real-time messaging is implemented using WebSockets to ensure message delivery within the specified latency.
 2.	Uptime:	Hosted on a reliable cloud platform with redundancy and failover mechanisms to ensure high availability.
