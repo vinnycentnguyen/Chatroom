@@ -16,6 +16,10 @@
 
 Upon creating our chatroom, we successfully implemented a way for users to send messages, join the chatroom using a custom name, display active users, timestamps, and room deletion once every user has left the chatroom. We have not implemented multimedia chatting (photos, videos, etc) **yet**, but our chatroom holds the ability for multiple users to join and interact!
 
+# Architecture Design:
+
+Our system is built in a way that the chatroom is able to run on an AWS EC2 instance, allowing members to chat over the internet. We are not implementing AWS Cognito into our architecture anymore, and have aimed for a more anonymous alternative of being able to change your username whenever you join the chatroom to whatever you want it to be. We are still following the Model View Controller architectural design pattern, with html, css, and JavaScript being used to run this React app. As specified, the chat room response is well under the 15 second response time limit we set in our architectural design. Messages are sent out to all members in milliseconds.
+
 # Testing
 
 To be able to run tests by typing `npm test` while in the `client` directory, you must first set up one thing. We might be forgetting something, but you should have to just enter this command: `npm install --save-dev babel-jest @babel/core @babel/preset-env` while in the `Chatroom` directory. You will also possibly need to enter this command as well: `npm install socket.io-mock`.
