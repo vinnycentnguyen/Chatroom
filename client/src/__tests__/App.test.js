@@ -22,14 +22,15 @@ test('should update username on input change and call joinRoom on Enter key pres
     render(<EnterChat setUsername={mockSetUsername} joinRoom={mockJoinRoom} />);
     const inputElement = screen.getByPlaceholderText('...');
 
-    // Simulate input change
+    // simulate input
     fireEvent.change(inputElement, { target: { value: 'testUser' } });
     expect(mockSetUsername).toHaveBeenCalledWith('testUser');
 
-    // Simulate Enter key press
+    // simulate Enter key press
     fireEvent.keyPress(inputElement, { charCode: 13 });
     expect(mockJoinRoom).toHaveBeenCalled();
 });
+
 
 test('should render title element correctly', () => {
     const mockSetUsername = jest.fn();

@@ -40,7 +40,7 @@ function Chat({socket, username, room}){
 
     return(
         <div data-testid="chat-room" className='chat-window'>
-            <div className='chat-participants'>
+            <div data-testtid='participant-list' className='chat-participants'>
                 <h3>Participants:</h3>
                 {chatters.map(chatter => <li>{chatter}</li>)}
             </div>
